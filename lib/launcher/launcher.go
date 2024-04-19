@@ -431,6 +431,7 @@ func (l *Launcher) Launch() (string, error) {
 	}
 
 	l.setupCmd(cmd)
+	fmt.Println("run cmd: ", cmd.String())
 
 	err = cmd.Start()
 	if err != nil {
